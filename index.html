@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Simple Safe Application</title>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="jquery.md5.js" type="text/javascript"></script>
+<script src="sha1.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+function md5hash () {
+	var message = document.getElementById('inputPass').value;
+	var salted = message + "simpleSafeSalt";
+	var md5hash = $.md5(salted);
+	var finalMessage;
+	var lastNumber;
+	finalMessage = "<table><tr><td id=\"number\">6:</td><td>" + md5hash.substr(0,6) + "</td></tr>";
+
+	for(number = 2; number < 8; number++) {
+		lastNumber = number + 5;
+		finalMessage += "<tr><td id=\"number\">"+ lastNumber +":</td><td>" + md5hash.substr(0, lastNumber) + "</td></tr>";		
+	}
+		
+	finalMessage += "</table>";
+
+	document.getElementById('password').innerHTML = finalMessage;
+		document.getElementById('logo').innerHTML = "<div style=\" margin: 50px auto; width: 300px;  height: 75px; \"><h1><span id=\"purple\">SimpleSafe</span> Application</h1></div>";
+	}
+
+
+function sha1hash () {
+	var message = document.getElementById('inputPass').value;
+	var salted = message + "simpleSafeSalt";
+	var md5hash = $.sha1(salted);
+	var finalMessage;
+	var lastNumber;
+	finalMessage = "<table><tr><td id=\"number\">6:</td><td>" + md5hash.substr(0,6) + "</td></tr>";
+
+	for(number = 2; number < 8; number++) {
+		lastNumber = number + 5;
+		finalMessage += "<tr><td id=\"number\">"+ lastNumber +":</td><td>" + md5hash.substr(0, lastNumber) + "</td></tr>";		
+	}
+		
+	finalMessage += "</table>";
+
+	document.getElementById('password').innerHTML = finalMessage;
+		document.getElementById('logo').innerHTML = "<div style=\" margin: 50px auto; width: 300px;  height: 75px; \"><h1><span id=\"purple\">SimpleSafe</span> Application</h1></div>";
+	}
+
+
+
+</script>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrappAll">
+<section id="app">
+
+<article id="logo"><img src="logo.jpg" alt="Simple Safe Application Logo" width="250" height="250" /></article>
+
+<div style="width:300px; text-align:center; margin: -40px auto 0; ">
+
+<article id="formStuff">
+<input type="text" id="inputPass" value="" placeholder="Enter a phrase here" autofocus="autofocus" required="required" /><br />
+</article>
+
+<article style="padding-top: 5px">
+<input type="button" name="MD5" onclick="md5hash()" value=" " id="MD5" />
+<input type="button" value=" " id="SHA1" onclick="sha1hash()" />
+
+</article>
+
+
+<article style="text-align: left;">
+<div id="password" style="margin: 10px auto; width: 200px;">
+
+</div>
+</article>
+
+</div>
+</section>
+
+
+<footer>
+<div id="info">
+<a href="http://simplesafeapp.com">SimpleSafe App</a> <a href="http://lonebench.com">LoneBench</a>
+</div>
+
+</footer>
+</div>
+
+
+</body>
+</html>
