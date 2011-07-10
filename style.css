@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;	
+	font-family: Helvetica, sans-serif, Arial;
+	border: 0;
+}
+
+header, section, footer, aside, nav, article, figure, time, canvas, details, figcaption, hgroup, menu, summary {
+     display: block;
+}
+
+
+a:hover{
+	color: #06F;	
+}
+
+#wrapAll{
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;	
+}
+
+#app {
+	width: 300px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#logo {
+	text-align: center ;	
+	margin: 0 auto;
+}
+
+h1{
+	text-align: center;
+	margin-top: 25px;
+	padding-bottom: 50px;
+		
+}
+
+#purple{
+		color: #4b52ba;
+}
+
+#info a{
+text-decoration: none;
+font-variant:small-caps; 
+font-size: 13px;
+color: 	#4b52ba;
+}
+
+
+footer {
+	text-align: center;
+	margin: 0 auto;
+	width: 300px;
+}
+
+/****** BUTTONS *******/
+#MD5 {
+	width: 50px;
+	height: 50px;
+	background-color: #bc4949;
+		-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	margin-top: 10px;
+	border: 0;
+}
+
+#MD5:hover{
+	background-color: #f35b5b;
+		-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;	
+	border: 0;
+}
+
+#MD5:active{
+	background-color: #730c0c;
+		-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;	
+}
+
+#SHA1{
+	width: 50px;
+	height: 50px;
+	background-color: #51bc49;
+	border: 0;
+		-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+
+#SHA1:hover{
+	background-color: #59e74f;
+		-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;	
+}
+
+#SHA1:active{
+	background-color: #0f7508;
+		-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;	
+}
+
+#inputPass {
+	font-size: 12pt;
+	height: 20px;
+	padding: 5px;	
+}
+
+#inputPass:active{
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;	
+	border: 0;
+}
+
+#inputPass{
+	border: 1px solid #CCC;	
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;	
+}
+
+/**** APP *****/
+
+#formStuff{
+	
+}
+
+#password td {
+	padding: 3px;
+	border-bottom: 1px solid #4b52ba;
+}
+
+
+
+#number {
+	padding-right: 10px;
+	border: 1px solid rgba(0,0,0, .2);
+	background: #4b52ba;
+	border-radius: 6px 0 0 0;
+	-webki-border-radius: 6px 0 0 0;
+	-moz-border-radius: 6px 0 0 0;
+	color: #FFF;
+}
+
+
+
+footer {
+	margin-top: 25px;	
+}
+/************ CLASSES *************/
+.alignCenter{
+	margin: 0 auto;
+}

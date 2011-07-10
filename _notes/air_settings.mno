@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="airDestinationFolder" value="E:\SimpleSafe\SimpleSafeAir" />
+	<infoitem key="airDestinationFileName" value="SimpleSafeAir.air" />
+	<infoitem key="airChosenCert" value="E:\SimpleSafe\sig.p12" />
+	<infoitem key="airPackageType" value="packageAIR" />
+	<infoitem key="airRememberPassword" value="true" />
+	<infoitem key="airFilesList" value="jquery.js#jquery.md5.js#logo.jpg#sha1.js#style.css" />
+	<infoitem key="airFullFilesList" value="index.html#jquery.js#jquery.md5.js#logo.jpg#sha1.js#style.css#icons/icon128p.png#icons/icon48p.png#icons/icon32p.png#icons/icon16p.png" />
+</info>

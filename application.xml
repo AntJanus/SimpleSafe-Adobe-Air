@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<application xmlns="http://ns.adobe.com/air/application/2.0">
+  <filename>SimpleSafeAir</filename>
+  <copyright>antonin januska</copyright>
+  <description>SimpleSafe App moving toward internet security, password generator
+    SimpleSafe app is currently in its beta production. It is an application that instantaneously converts a simple phrase (such as 'hello') through a hash system (such as MD5 and SHA-1) into a fully secure password of your chosen length. This helps with password security because it translates simple passwords that we're used to such as Word382 into fully working, complex character/number hashes. You can copy the hashes over to your browser and make it all work.</description>
+  <customUpdateUI>false</customUpdateUI>
+  <name>SimpleSafe Application</name>
+  <id>SimpleSafeAir</id>
+  <version>1</version>
+  <initialWindow>
+    <content>index.html</content>
+    <height>550</height>
+    <width>350</width>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+  </initialWindow>
+  <icon>
+    <image128x128>icons/icon128p.png</image128x128>
+    <image48x48>icons/icon48p.png</image48x48>
+    <image32x32>icons/icon32p.png</image32x32>
+    <image16x16>icons/icon16p.png</image16x16>
+  </icon>
+</application>
